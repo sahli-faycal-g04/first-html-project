@@ -1,0 +1,107 @@
+	<!DOCTYPE html>
+	<html lang="en" dir="ltr">
+	<head>
+	<metacharset="utf-8">
+	<script language="JavaScript">
+	var score = 1000; 
+
+		
+	document.getElementById("score").onclick=function(){ 
+	score = score + 1000; 
+	document.getElementById("score").value = score; 
+	}; 
+	</script>
+	
+	<title>Mon premiere formulaire</title>
+        
+        <style type="text/css">
+	body{ 
+	background-color: #B3B9a6; 
+	margin-left: 20%; 
+	margin-right: 20%; 
+	//border: 2px dotted red; 
+	padding: 20px 20px 20px 20px; 
+	font-family: sans-serif; 
+	} 
+	</style>
+
+	</head>
+	<body>
+	
+	<form>
+	<h1> Votre Avis Nous Intéresse </h1>
+                
+	<Style>
+	.container{ 
+	Display: flex; 
+	} 
+	</style>
+	<div class=container>
+	
+	<fieldset>
+	<legend>Information Personnelle</legend>
+	Nom : <input type="text" name="Nom" maxlength="25"/><br/>
+	Date de naissance : <input name="Date de naissance" type="date" required="" maxlength="25" /><br/>
+	<tr>
+	<td>
+	Emploi</td>
+	<td><select name="Emploi" maxlength="25"><option value ="">
+	</option>
+	<option value ="Etudiant">Etudiant </option>
+	<option value="Administrateur Réseau">Administrateur Réseau</option>
+	<option value ="Développeur web">Développeur web </option>
+	<option value ="Web designer">Web designer </option>
+	<option value ="DevOps">DevOps</option>
+	</select>
+	</td>
+	</tr>
+	Salaire </td>
+	
+	<input type="number" name="salaire" placeholder="1000$" id="score" maxlength="25"/><br/>
+	
+        l’URL
+	<input type="text" name="URL" id="URL" placeholder="http:// URL.com" maxlength="25" /><br/>
+	</fieldset>
+	<fieldset>
+	<legend>Information de contact</legend>
+
+       
+	
+	Adresse Line 1<br>
+	
+	<input type="address" name="Adresse Line 1" id="Adresse Line 1" value=""/><br/>
+	Adresse Line 2<br>
+	
+	<input type="address" name="Adresse Line 2" id="Adresse Line 2" value=""/><br/>
+	<tr>
+	<td> Pays</td>
+	<td><select name="distination" id="distination"><option value ="">
+	</option>
+	<option value ="Algérie"> Algérie </option>
+	<option value="Tunisie"> Tunisie </option>
+	<option value ="Maroc"> Maroc </option>
+	
+	</select>
+	</td>
+	</tr>
+	
+	Email <td>
+	<input type="email" name="Email" id="Email" required="" maxlength="25"/><br/>
+        
+	</fieldset>
+        </td>
+	</tr>
+	
+	</div>
+	<div class="Préférences">
+	<h2>Préférences </h2>
+	<p>Choisir une couleur <input type="color" required="" /></p><br>
+	Sur une échelle de 1 à 10, quel est votre degré d'enthousiasme pour HTML5?
+	<input type="range" required="" /><br>
+	<input type="submit" value="Envoyer">
+	</div>
+	
+	</body>
+	</html>
+	
+
